@@ -4,6 +4,32 @@ Luke Arnold, a02368233, Algorithms Under Uncertainty Midterm
 Processor Binning
 ----------------------------------------
 
+   *   Part 1:
+
+    -  To see plots of both how many EHP chips are produced per day, as well as the distribution of chips produced, simply run
+
+       `python ProcessorBinning.py part1` 
+
+   *   Part 2:
+
+    -  I was unsure of how to compute the early stopping rule for this application. But my technique was to find the total
+       number of processors created in the first 37% of days, keeping track of the maximum amount of processors created
+       in a single day. 
+
+       From there, the simulation continued, calculating the total number of processors created in the remaining days. 
+       If a single day created more EHP processors than the max amount in the first 37% of days, the simulation stopped early.
+       This was done because we assume that most processors created are junk ones, are we are unlikely to get a better
+       total number of processors relative to the total amount of processors created. 
+
+       This resulted in a distribution more skewed towards larger values of processors created daily 
+
+       To see the plots of both daily production and distribution run
+
+       `python ProcessorBinning.py part2`
+
+
+   *   Part 3:
+
 Mineral Samples and Geological Surveys
 ----------------------------------------
 
@@ -64,5 +90,22 @@ Mineral Samples and Geological Surveys
         On some simulations, other locations rather than 10 and 6 may perform better. But with most simulations I've ran sites 10 and 6 are the optimal choices. 
 
 
+Tech Sector After Covid
+-----------------------------------------
 
+Insurance
+----------------------------------------
+
+Bonus
+----------------------------------------
+
+   *   Thus far in the class, despite having a strong background in computer science, I've struggled at completing some of the assignment.
+       Because so many of the applications are based in real world topics (such as insurance, stocks, statistics, etc.) I've struggled because I 
+       don't understand the real world topics, not because I haven't understood the main ideas being covered in class.
+
+       Some assignments have taken me a long time to complete, not because I don't understand optimal stopping, or epsilon greedy approaches, but because
+       I'm not really all that sure how volatility affects stock prices, or different types of distributions. 
+
+       In the future, I think It might be a good idea to impose some prerequisites for the class, requiring that a statistics class been taken before
+       taking this class. 
     
